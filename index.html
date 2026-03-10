@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Nathy, sua Bíblia IA</title>
+  </head>
+  <body style="margin: 0; padding: 0; overflow: hidden; height: 100vh; height: 100dvh; position: fixed; width: 100%;">
+    <div id="root" style="height: 100%; width: 100%; overflow: hidden;"></div>
+    <script>
+      // Fixar altura da viewport para evitar problemas no Chrome mobile
+      function setViewportHeight() {
+        const vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+      }
+      
+      setViewportHeight();
+      window.addEventListener('resize', setViewportHeight);
+      window.addEventListener('orientationchange', setViewportHeight);
+      
+      // Prevenir scroll na página principal
+      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
